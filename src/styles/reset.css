@@ -127,3 +127,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+a:visited {
+  color: #ccc;
+}
