@@ -291,9 +291,8 @@ const armorSets = [
   {
     name: "Fingerprint Set",
     price: 5000,
-    img: "Attire singed and blistered by fingers.",
-    description:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fingerprint_set.png",
+    img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fingerprint_set.png",
+    description: "Attire singed and blistered by fingers.",
     id: "fingerprintSet",
   },
   {
@@ -431,8 +430,7 @@ const armorSets = [
     name: "Hoslow's Set",
     price: 15500,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/hoslow-set-elden-ring-wiki-guide.png",
-    description:
-      "Garish silver Armor Set decorated with red embellishments. Passed down through the Hoslow family.  ",
+    description: "Garish silver Armor Set decorated with red embellishments.  ",
     id: "hoslowSet",
   },
   {
@@ -454,7 +452,7 @@ const armorSets = [
     price: 1800,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/juvenile-scholar-set-elden-ring-wiki-guide.png",
     description:
-      "Armor Set by young academy scholars, the juveniles birthed anew by the amber egg of Queen Rennala",
+      "Armor of the juveniles birthed anew by the amber egg of Queen Rennala.",
     id: "juvenileScholarSet",
   },
   {
