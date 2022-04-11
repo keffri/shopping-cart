@@ -4,22 +4,24 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <a className="navbar__link" href="/">
-          Shoppy
-        </a>
+        <h1>Elden Bling</h1>
       </div>
 
-      <ul className="navbar__links">
-        <li className="navbar__link">
-          <a href="/">Home</a>
-        </li>
-        <li className="navbar__link">
-          <a href="/shop">Shop</a>
-        </li>
-      </ul>
-      <div className="navbar__cart">
+      <div className="navbar__linksContainer">
+        <ul className="navbar__links">
+          <li className="navbar__link">
+            <a href="/">Home</a>
+          </li>
+          <li className="navbar__link">
+            <a href="/shop">Shop</a>
+          </li>
+          <li className="navbar__link">
+            <a href="/about">About</a>
+          </li>
+        </ul>
+
         <a className="navbar__link" href="/cart">
-          Cart
+          Cart (#)
         </a>
       </div>
     </nav>
