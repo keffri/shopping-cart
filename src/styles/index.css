@@ -9,15 +9,15 @@ body {
 }
 
 #root {
-  height: 100vh;
+  height: 100%;
 }
 
 .app {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #222222;
-  color: #ccc;
+  background-color: #000;
+  color: #787659;
 }
 
 /**** NAVBAR ****/
@@ -26,27 +26,37 @@ body {
   display: flex;
   padding-top: 2px;
   height: 40px;
-  border: solid 1px #ccc;
+  background: #000;
+  color: #787659;
+  border: solid 1px #787659;
 }
 
 .navbar__logo {
   flex: 1;
-  margin-left: 2em;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.navbar__linksContainer {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
 }
 
 .navbar__links {
   display: flex;
-  gap: 30px;
-
-  flex: 2;
-  justify-content: center;
+  gap: 20px;
 }
 
 .navbar__cart {
-  margin-right: 2em;
+
 }
 .navbar__link {
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 
 /**** HOME ****/
@@ -54,8 +64,8 @@ body {
 .home {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  border: 1px solid #ccc;
+  height: 100%;
+  border: 1px solid #787659;
 }
 
 /**** SHOP ****/
@@ -63,8 +73,78 @@ body {
 .shop {
   display: flex;
   flex-direction: column;
+  height: auto;
+  border: 1px solid #787659;
+}
+
+.shop__title {
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline;
+  margin: 1em 0 1.5em 0;
+}
+
+.shop__select {
+  width: 150px;
+  align-self: center;
+  margin-bottom: 1.5rem;
+}
+
+.shop__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-left: 1em;
+}
+/*** CARD ***/
+
+.card {
+  display: flex;
+
+  flex-direction: column;
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.item__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 125px;
+  width: 200px;
+
+  
+}
+
+.item__image {
+  width: 190px;
+  height: 350px;
+}
+
+.item__name {
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  margin: 8px 0 8px 0;
+}
+
+.item__description {
+  text-align: center;
+}
+
+.item__price {
+  text-align: center;
+}
+
+/**** ABOUT ****/
+
+.about {
+  display: flex;
+  flex-direction: column;
   flex: 1;
-  border: 1px solid #ccc;
+  border: 1px solid #787659;
 }
 
 /**** CART ****/
@@ -73,5 +153,5 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  border: 1px solid #ccc;
+  border: 1px solid #787659;
 }

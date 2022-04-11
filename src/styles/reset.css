@@ -128,9 +128,12 @@ table {
   border-spacing: 0;
 }
 a {
-  color: #ccc;
+  color: #787659;
   text-decoration: none;
 }
 a:visited {
-  color: #ccc;
+  color: #787659;
+}
+a:hover {
+ text-decoration: underline;
 }
