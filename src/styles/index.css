@@ -97,6 +97,12 @@ body {
   gap: 2em;
   margin-left: 1em;
 }
+
+.shop__button {
+  width: 150px;
+  align-self: center;
+  margin: 1.5rem 0 1.5rem 0;
+}
 /*** CARD ***/
 
 .card {
