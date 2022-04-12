@@ -39,7 +39,7 @@ const armorSets = [
     name: "Azur's Glintstone Set",
     price: 22000,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/azurs_full_set_2.png",
-    description: "Worn by the Primeval Sorcer Azur",
+    description: "Worn by the Primeval Sorcer Azur.",
     id: "azurGlintstoneSet",
   },
   {
@@ -98,7 +98,7 @@ const armorSets = [
     price: 9500,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound-set-elden-ring-wiki-guide.png",
     description:
-      "Armor worn by Vargram the Bloody Wolf, one of the first Tarnished to visit the Roundtable Hold",
+      "Armor worn by Vargram the Bloody Wolf, one of the first Tarnished to visit the Roundtable Hold.",
     id: "bloodhoundKnightSet",
   },
   {
@@ -106,7 +106,7 @@ const armorSets = [
     price: 800,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodsoaked_set.png",
     description:
-      "Amor Set formed from tightly-wound bandages soaked through with blood",
+      "Amor Set formed from tightly-wound bandages soaked through with blood.",
     id: "bloodSoakedSet",
   },
   {
@@ -196,7 +196,7 @@ const armorSets = [
     price: 10000,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_knight_set.png",
     description:
-      " Armor of one of sixteen ancient knights who served Godfrey, the first Elden Lord",
+      " Armor of one of sixteen ancient knights who served Godfrey, the first Elden Lord.",
     id: "crucibleAxeSet",
   },
   {
@@ -380,7 +380,7 @@ const armorSets = [
     name: "Guardian Set",
     price: 5000,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/guardian_set.png",
-    description: "Worn by the guardians of the Minor Erdtree",
+    description: "Worn by the guardians of the Minor Erdtree.",
     id: "guardianSet",
   },
   {
@@ -394,7 +394,7 @@ const armorSets = [
     name: "Haligtree Foot Soldier Set",
     price: 3000,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_foot_soldier_set.png",
-    description: "Worn by foot soldiers loyal to Malenia",
+    description: "Worn by foot soldiers loyal to Malenia.",
     id: "haligtreeFootSoldierSet",
   },
   {
@@ -444,7 +444,7 @@ const armorSets = [
     name: "Iron Set",
     price: 3750,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/iron_set.png",
-    description: "Armor reinforced with small metal scales",
+    description: "Armor reinforced with small metal scales.",
     id: "ironSet",
   },
   {
@@ -452,7 +452,7 @@ const armorSets = [
     price: 1800,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/juvenile-scholar-set-elden-ring-wiki-guide.png",
     description:
-      "Armor of the juveniles birthed anew by the amber egg of Queen Rennala.",
+      "Armor of the juveniles birthed a new by the amber egg of Queen Rennala.",
     id: "juvenileScholarSet",
   },
   {
@@ -481,7 +481,7 @@ const armorSets = [
     name: "Lazuli Sorcerer Set",
     price: 5000,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lazuli_sorcerer_set.png",
-    description: "Attire worn by Raya Lucarian scholars",
+    description: "Attire worn by Raya Lucarian scholars.",
     id: "lazuliSorcererSet",
   },
   {
@@ -572,7 +572,7 @@ const armorSets = [
     price: 7700,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_knight_set.png",
     description:
-      "Armor worn by the headless knights who endlessly guard the Wandering Mausoleum",
+      "Armor worn by the headless knights who endlessly guard the Wandering Mausoleum.",
     id: "mausoleumKnightSet",
   },
   {
@@ -615,7 +615,7 @@ const armorSets = [
     name: "Nomadic Merchant's Set",
     price: 2750,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchant's_set.png",
-    description: "Attire of the nomadic merchants",
+    description: "Attire of the nomadic merchants.",
     id: "nomadicMerchantSet",
   },
   {
@@ -636,7 +636,7 @@ const armorSets = [
     name: "Old Aristocrat Set",
     price: 1250,
     img: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/old_aristocrat_set.png",
-    description: "Attire favored by the aged",
+    description: "Attire favored by the aged.",
     id: "oldAristocratSet",
   },
   {
