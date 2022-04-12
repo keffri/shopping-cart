@@ -24,6 +24,7 @@ const Shop = () => {
       return 0;
     }
   };
+
   const reversedArmors = armorSets.slice().reverse();
 
   const lowToHighArmors = armorSets.slice().sort(sortLow);
@@ -32,6 +33,13 @@ const Shop = () => {
 
   const handleChange = (e) => {
     setOrder(e.target.value);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -61,6 +69,9 @@ const Shop = () => {
             return <ItemCard data={item} key={item.id} />;
           })}
       </div>
+      <button className="shop__button" onClick={scrollToTop}>
+        Return to Top
+      </button>
     </div>
   );
 };
