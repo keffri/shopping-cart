@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+
 * {
   box-sizing: border-box;
 }
+
+
 
 html,
 body {
@@ -64,8 +68,23 @@ body {
 .home {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 97%;
   border: 1px solid #787659;
+}
+
+.home__title {
+  position: absolute;
+  color: #000;
+  left: 37%;
+  top: 40%;
+  font-size: 3.5rem;
+  font-family: Babylonica;
+  word-spacing: 8px;
+}
+
+.home__video {
+ height: 95.5vh;
+ object-fit: cover;
 }
 
 /**** SHOP ****/
@@ -74,7 +93,7 @@ body {
   display: flex;
   flex-direction: column;
   height: auto;
-  border: 1px solid #787659;
+  border: 1px solid #787659;  
 }
 
 .shop__title {
@@ -149,8 +168,15 @@ body {
 .about {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  height: 100%;
   border: 1px solid #787659;
+}
+
+.about__title {
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline;
+  margin: 1em 0 1.5em 0;
 }
 
 /**** CART ****/
