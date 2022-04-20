@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import ItemCard from "./ItemCard";
+import ItemPage from "./ItemPage";
 import armorSets from "../armorSets";
+import { click } from "@testing-library/user-event/dist/click";
 
 const Shop = () => {
   const [order, setOrder] = useState("alphabeticalAZ");
+
+  const [viewingItem, setViewingItem] = useState(false);
+
+  const [clickedItem, setClickedItem] = useState(null);
 
   const sortLow = (a, b) => {
     if (a.price < b.price) {
@@ -42,6 +48,18 @@ const Shop = () => {
     });
   };
 
+  const viewItem = (item) => {
+    if (viewingItem) {
+      return;
+    }
+    setViewingItem(true);
+  };
+
+  const handleClick = (data) => {
+    viewItem();
+    setClickedItem(data);
+  };
+
   return (
     <div className="shop">
       <h1 className="shop__title">Shop</h1>
@@ -51,22 +69,35 @@ const Shop = () => {
         <option value="priceHighLow">Price: High to Low</option>
         <option value="priceLowHigh">Price: Low to High</option>
       </select>
+      {viewingItem && (
+        <ItemPage
+          view={viewingItem}
+          changeView={setViewingItem}
+          data={clickedItem}
+        />
+      )}
       <div className="shop__container">
         {order === "alphabeticalAZ" &&
           armorSets.map((item) => {
-            return <ItemCard data={item} key={item.id} />;
+            return (
+              <ItemCard
+                data={item}
+                key={item.id}
+                onClick={() => handleClick(item)}
+              />
+            );
           })}
         {order === "alphabeticalZA" &&
           reversedArmors.map((item) => {
-            return <ItemCard data={item} key={item.id} />;
+            return <ItemCard data={item} key={item.id} onClick={viewItem} />;
           })}
         {order === "priceHighLow" &&
           highToLowArmor.map((item) => {
-            return <ItemCard data={item} key={item.id} />;
+            return <ItemCard data={item} key={item.id} onClick={viewItem} />;
           })}
         {order === "priceLowHigh" &&
           lowToHighArmors.map((item) => {
-            return <ItemCard data={item} key={item.id} />;
+            return <ItemCard data={item} key={item.id} onClick={viewItem} />;
           })}
       </div>
       <button className="shop__button" onClick={scrollToTop}>
