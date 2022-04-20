@@ -10,6 +10,7 @@ html,
 body {
   min-height: 100%;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 #root {
@@ -113,8 +114,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2em;
-  margin-left: 1em;
+  gap: 3.2em;
 }
 
 .shop__button {
@@ -126,10 +126,10 @@ body {
 
 .card {
   display: flex;
-
   flex-direction: column;
   width: 200px;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .item__info {
@@ -161,6 +161,60 @@ body {
 
 .item__price {
   text-align: center;
+  margin-right: 5px ;
+}
+
+.item--inline {
+  display: flex;
+}
+
+/**** ITEM PAGE ****/
+
+.itempage {
+  display: flex;
+  height: 700px;
+  width: 700px;
+  border: 1px solid #787659;
+  position: fixed;  
+  top: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-self: flex-start;
+  background-color: #000;
+}
+
+.itempage__title {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+
+.itempage__button {
+  
+}
+
+.itempage__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.itempage__img {
+  width: 300px;
+}
+
+.itempage__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.itempage__text {
+  font-size: 1.5rem;
 }
 
 /**** ABOUT ****/
