@@ -191,11 +191,6 @@ body {
   text-decoration: underline;
 }
 
-
-.itempage__button {
-  
-}
-
 .itempage__image {
   display: flex;
   flex-direction: column;
@@ -203,7 +198,8 @@ body {
 }
 
 .itempage__img {
-  width: 300px;
+  width: 275px;
+  margin-left: 1em;
 }
 
 .itempage__info {
@@ -211,10 +207,16 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 1em;
 }
 
 .itempage__text {
   font-size: 1.5rem;
+}
+
+.itempage__rune {
+  margin-left: .5em;
+  align-self: center;
 }
 
 /**** ABOUT ****/
