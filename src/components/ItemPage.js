@@ -1,4 +1,5 @@
 import React from "react";
+import rune_icon from "../images/rune_icon.png";
 
 const ItemPage = (props) => {
   const closeItem = () => {
@@ -12,7 +13,10 @@ const ItemPage = (props) => {
       </div>
       <div className="itempage__info">
         <h1 className="itempage__title">{props.data.name}</h1>
-        <p className="itempage__text">{props.data.price}</p>
+        <div className="item--inline">
+          <p className="itempage__text">{props.data.price}</p>
+          <img src={rune_icon} alt="rune" className="itempage__rune" />
+        </div>
         <p className="itempage__text">{props.data.description}</p>
         <button className="itempage__button">Add to Cart</button>
         <button className="itempage__button" onClick={closeItem}>
