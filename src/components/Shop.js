@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ItemCard from "./ItemCard";
 import ItemPage from "./ItemPage";
 import armorSets from "../armorSets";
-import { click } from "@testing-library/user-event/dist/click";
 
 const Shop = () => {
   const [order, setOrder] = useState("alphabeticalAZ");
