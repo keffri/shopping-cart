@@ -28,6 +28,8 @@ body {
 /**** NAVBAR ****/
 
 .navbar {
+  position: sticky;
+  top: 0;
   display: flex;
   padding-top: 2px;
   height: 40px;
