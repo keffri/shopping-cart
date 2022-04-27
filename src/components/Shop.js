@@ -3,7 +3,7 @@ import ItemCard from "./ItemCard";
 import ItemPage from "./ItemPage";
 import armorSets from "../armorSets";
 
-const Shop = () => {
+const Shop = (props) => {
   const [order, setOrder] = useState("alphabeticalAZ");
 
   const [viewingItem, setViewingItem] = useState(false);
@@ -73,6 +73,7 @@ const Shop = () => {
           view={viewingItem}
           changeView={setViewingItem}
           data={clickedItem}
+          setCartItems={props.setCartItems}
         />
       )}
       <div className="shop__container">

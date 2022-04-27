@@ -6,6 +6,12 @@ const ItemPage = (props) => {
     props.changeView(!props.view);
   };
 
+  const addToCart = (data) => {
+    props.setCartItems((prevState) => {
+      return [...prevState, data];
+    });
+  };
+
   return (
     <div className="itempage">
       <div className="itempage__image">
@@ -18,7 +24,12 @@ const ItemPage = (props) => {
           <img src={rune_icon} alt="rune" className="itempage__rune" />
         </div>
         <p className="itempage__text">{props.data.description}</p>
-        <button className="itempage__button">Add to Cart</button>
+        <button
+          className="itempage__button"
+          onClick={() => addToCart(props.data)}
+        >
+          Add to Cart
+        </button>
         <button className="itempage__button" onClick={closeItem}>
           Close
         </button>
