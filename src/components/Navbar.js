@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
@@ -21,7 +21,7 @@ const Navbar = () => {
         </ul>
 
         <a className="navbar__link" href="/cart">
-          Cart (#)
+          Cart ({props.cartItems.length})
         </a>
       </div>
     </nav>
