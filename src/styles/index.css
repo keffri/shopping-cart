@@ -14,7 +14,7 @@ body {
 }
 
 #root {
-  height: 100vh;
+  height: 100%;
 }
 
 .app {
@@ -244,4 +244,11 @@ body {
   flex-direction: column;
   flex: 2;
   border: 1px solid #787659;
+}
+
+.cart__title {
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline;
+  margin: 1em 0 1.5em 0;
 }
