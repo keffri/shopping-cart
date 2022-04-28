@@ -19,7 +19,6 @@ function App() {
             path="/shop"
             element={<Shop cartItems={cartItems} setCartItems={setCartItems} />}
           />
-          <Route path="/about" element={<About />} />
           <Route
             path="/cart"
             element={<Cart cartItems={cartItems} setCartItems={setCartItems} />}

@@ -15,9 +15,6 @@ const Navbar = (props) => {
           <li className="navbar__link">
             <a href="/shop">Shop</a>
           </li>
-          <li className="navbar__link">
-            <a href="/about">About</a>
-          </li>
         </ul>
 
         <a className="navbar__link" href="/cart">
