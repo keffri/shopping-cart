@@ -256,3 +256,31 @@ body {
 .cart__container {
   display: flex;
 }
+
+.cart__items {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.cart__info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+}
+
+.cart--text {
+  font-size:  1.2rem;
+  padding: 3px 0px;
+}
+
+.cart--total {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.cart--checkOut {
+  align-self: center;
+  margin-top: 1rem;
+}
