@@ -89,15 +89,33 @@ const Shop = (props) => {
           })}
         {order === "alphabeticalZA" &&
           reversedArmors.map((item) => {
-            return <ItemCard data={item} key={item.id} onClick={viewItem} />;
+            return (
+              <ItemCard
+                data={item}
+                key={item.id}
+                onClick={() => handleClick(item)}
+              />
+            );
           })}
         {order === "priceHighLow" &&
           highToLowArmor.map((item) => {
-            return <ItemCard data={item} key={item.id} onClick={viewItem} />;
+            return (
+              <ItemCard
+                data={item}
+                key={item.id}
+                onClick={() => handleClick(item)}
+              />
+            );
           })}
         {order === "priceLowHigh" &&
           lowToHighArmors.map((item) => {
-            return <ItemCard data={item} key={item.id} onClick={viewItem} />;
+            return (
+              <ItemCard
+                data={item}
+                key={item.id}
+                onClick={() => handleClick(item)}
+              />
+            );
           })}
       </div>
       <button className="shop__button" onClick={scrollToTop}>
