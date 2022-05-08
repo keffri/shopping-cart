@@ -10,6 +10,7 @@ html,
 body {
   min-height: 100%;
   font-family: Arial, Helvetica, sans-serif;
+  background: #000;
   
 }
 
@@ -72,7 +73,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 97%;
-  border: 1px solid #787659;
+
+  
 }
 
 .home__title {
@@ -96,7 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   height: auto;
-  border: 1px solid #787659;  
+   
 }
 
 .shop__title {
@@ -130,7 +132,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 200px;
-  margin-bottom: 1rem;
+  margin: 0 1em 1em 1em;
   cursor: pointer;
 }
 
@@ -243,7 +245,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 2;
-  border: 1px solid #787659;
+
 }
 
 .cart__title {
@@ -255,6 +257,7 @@ body {
 
 .cart__container {
   display: flex;
+  
 }
 
 .cart__items {
