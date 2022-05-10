@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ItemCard from "./ItemCard";
 import ItemPage from "./ItemPage";
 import armorSets from "../armorSets";
+import uniqid from "uniqid";
 
 const Shop = (props) => {
   const [order, setOrder] = useState("alphabeticalAZ");
@@ -82,7 +83,7 @@ const Shop = (props) => {
             return (
               <ItemCard
                 data={item}
-                key={item.id}
+                key={uniqid()}
                 onClick={() => handleClick(item)}
               />
             );
@@ -92,7 +93,7 @@ const Shop = (props) => {
             return (
               <ItemCard
                 data={item}
-                key={item.id}
+                key={uniqid()}
                 onClick={() => handleClick(item)}
               />
             );
@@ -102,7 +103,7 @@ const Shop = (props) => {
             return (
               <ItemCard
                 data={item}
-                key={item.id}
+                key={uniqid()}
                 onClick={() => handleClick(item)}
               />
             );
@@ -112,7 +113,7 @@ const Shop = (props) => {
             return (
               <ItemCard
                 data={item}
-                key={item.id}
+                key={uniqid()}
                 onClick={() => handleClick(item)}
               />
             );
