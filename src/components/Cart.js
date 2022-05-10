@@ -1,5 +1,5 @@
 import React from "react";
-import ItemCard from "./ItemCard";
+import CartItemCard from "./CartItemCard";
 import rune_icon from "../images/rune_icon.png";
 import uniqid from "uniqid";
 
@@ -10,7 +10,14 @@ const Cart = (props) => {
       <div className="cart__container">
         <div className="cart__items">
           {props.cartItems.map((item) => {
-            return <ItemCard data={item} key={uniqid()} />;
+            return (
+              <CartItemCard
+                data={item}
+                key={uniqid()}
+                cartItems={props.cartItems}
+                setCartItems={props.setCartItems}
+              />
+            );
           })}
         </div>
         <div className="cart__info">
