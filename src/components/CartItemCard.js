@@ -2,6 +2,10 @@ import React from "react";
 import rune_icon from "../images/rune_icon.png";
 
 const CartItemCard = (props) => {
+  const removeCartItem = (id) => {
+    props.setCartItems(props.cartItems.filter((item) => item.id !== id));
+  };
+
   return (
     <div className="card" onClick={props.onClick}>
       <img src={props.data.img} alt="img" className="item__image" />
@@ -13,7 +17,12 @@ const CartItemCard = (props) => {
         </div>
         <p className="item__description">{props.data.description}</p>
       </div>
-      <button className="item__remove">X</button>
+      <button
+        className="item__remove"
+        onClick={() => removeCartItem(props.data.id)}
+      >
+        X
+      </button>
     </div>
   );
 };
