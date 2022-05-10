@@ -167,6 +167,11 @@ body {
 
 .item--inline {
   display: flex;
+} 
+
+.item__remove {
+  align-self: center;
+  margin-top: 1em;
 }
 
 /**** ITEM PAGE ****/
