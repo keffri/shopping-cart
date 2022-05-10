@@ -1,5 +1,6 @@
 import React from "react";
 import rune_icon from "../images/rune_icon.png";
+import uniqid from "uniqid";
 
 const ItemPage = (props) => {
   const closeItem = () => {
@@ -8,7 +9,7 @@ const ItemPage = (props) => {
 
   const addToCart = (data) => {
     props.setCartItems((prevState) => {
-      return [...prevState, data];
+      return [...prevState, { ...data, id: uniqid() }];
     });
   };
 
