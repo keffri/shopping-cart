@@ -48,7 +48,7 @@ const Shop = (props) => {
     });
   };
 
-  const viewItem = (item) => {
+  const viewItem = () => {
     if (viewingItem) {
       return;
     }
