@@ -1,12 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import CartItemCard from "./CartItemCard";
+import CheckOutPage from "./CheckOutPage";
 import rune_icon from "../images/rune_icon.png";
 import uniqid from "uniqid";
 
 const Cart = (props) => {
+  const [checkingOut, setCheckingOut] = useState(false);
+
+  const checkOut = () => {
+    if (props.cartItems.length === 0) {
+      return;
+    }
+    if (checkingOut) {
+      return;
+    } else {
+      setCheckingOut(true);
+    }
+  };
+
+  const emptyCart = () => {
+    props.setCartItems([]);
+  };
+
   return (
     <div className="cart">
       <h1 className="cart__title">Cart</h1>
+      {checkingOut && (
+        <CheckOutPage
+          checkingOut={checkingOut}
+          setCheckingOut={setCheckingOut}
+        />
+      )}
       <div className="cart__container">
         <div className="cart__items">
           {props.cartItems.map((item) => {
@@ -34,7 +58,12 @@ const Cart = (props) => {
             Total: {props.cartItems.reduce((sum, i) => sum + i.price, 0)}{" "}
             <img src={rune_icon} alt="rune" />
           </h2>
-          <button className="cart--checkOut">Check Out</button>
+          <button className="cart--btn" onClick={checkOut}>
+            Check Out
+          </button>
+          <button className="cart--btn" onClick={emptyCart}>
+            Empty Cart
+          </button>
         </div>
       </div>
     </div>
